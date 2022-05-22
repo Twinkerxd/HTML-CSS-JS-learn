@@ -1,0 +1,34 @@
+.text1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.text2 {
+    font-family: Impact, serif;
+    text-align: center;
+}
+
+#someid {
+    font-family: "Droid Sans", serif;
+    font-size: 18px;
+}
+
+[customAttr] {
+    text-decoration: line-through;
+}
+
+div {
+    font-size: 30px;
+}
+
+ol {
+    text-decoration-color: crimson;
+}
+
+.text {
+    text-align: center;
+}
+
+.link {
+    text-align: center;
+}

@@ -1,2 +1,2 @@
 # junk
-Some junk code here.
+My educational project for HTML, CSS, JS
