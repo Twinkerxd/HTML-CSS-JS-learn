@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="myScript.js"></script>
+    <style>
+    input[type='text'] {font-size: 24px;}
+    button {height:100px;width:100px;}
+    button {font-size: 24px;}
+    </style>
+</head>
+<body>
+<br>
+<b>Attribute and value</b>
+<br>
+<img src="save.ico" alt="save.ico" width="50" height="50" onclick="save(1)">
+<input id="firstText" type="text" size="100" value="name=&quot;text&quot;" onchange="onChange()">
+<br>
+<br>
+<b>Simple XPATH</b>
+<br>
+<img src="save.ico" alt="save.ico" width="50" height="50" onclick="save(2)">
+<input id="secondText" type="text" size="100">
+<br>
+<br>
+<b>Contains</b>
+<br>
+<img src="save.ico" alt="save.ico" width="50" height="50" onclick="save(3)">
+<input id="thirdText" type="text" size="100">
+<br>
+<br>
+<b>Empty helper input</b>
+<br>
+<input id="fourText" type="text" size="100">
+<br>
+<br>
+<button id="*" onclick="add('*')" type="button">*</button>
+<button id="div" onclick="add('div')" type="button">div</button>
+<button id="a" onclick="add('a')" type="button">a</button>
+<button id="span" onclick="add('span')" type="button">span</button>
+<button id="ul" onclick="add('ul')" type="button">ul</button>
+<button id="li" onclick="add('li')" type="button">li</button>
+<button id="button" onclick="add('button')" type="button">button</button>
+</body>
+</html>
