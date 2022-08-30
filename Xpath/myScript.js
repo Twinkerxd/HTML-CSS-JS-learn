@@ -24,14 +24,16 @@ function add(id) {
     var value = null;
 
     const myArray = s.split("=");
-        for (var i = 0; i < 2; i++) {
-        }
+    if (myArray.length == 2) {
+        attribute = myArray[0];
+            value = myArray[1].replaceAll(`"`, `'`);
 
-    attribute = myArray[0];
-    value = myArray[1].replaceAll(`"`, `'`);
-
-    document.getElementById("secondText").value = "//"+id+"[@"+attribute+"="+value+"]";
-    document.getElementById("thirdText").value = "//"+id+"[contains(@"+attribute+","+value+")]";
+            document.getElementById("secondText").value = "//"+id+"[@"+attribute+"="+value+"]";
+            document.getElementById("thirdText").value = "//"+id+"[contains(@"+attribute+","+value+")]";
+            document.getElementById("fourText").value = "";
+    } else {
+        text(id);
+    }
 }
 
 function save(id) {
@@ -42,9 +44,19 @@ function save(id) {
         element = document.getElementById("secondText");
     } else if (id == 3) {
         element = document.getElementById("thirdText");
+    } else if (id == 4) {
+        element = document.getElementById("fourText");
     }
     element.select();
     document.execCommand("copy");
+}
+
+function text(id) {
+    var s = document.getElementById("firstText").value;
+//    .replaceAll(' ', '')
+    document.getElementById("fourText").value = "//"+id+"[contains(text(),'"+s+"')]"
+    document.getElementById("secondText").value = "";
+    document.getElementById("thirdText").value = "";
 }
 
 

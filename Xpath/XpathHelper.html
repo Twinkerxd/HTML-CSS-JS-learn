@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Xpath generator</title>
     <script src="myScript.js"></script>
     <style>
     input[type='text'] {font-size: 24px;}
@@ -11,36 +11,44 @@
     </style>
 </head>
 <body>
-<br>
-<b>Attribute and value</b>
+<h1>Amazing xpath generator 3000</h1>
+<b>Attribute and value or text</b>
 <br>
 <img src="save.ico" alt="save.ico" width="50" height="50" onclick="save(1)">
-<input id="firstText" type="text" size="100" value="name=&quot;text&quot;" onchange="onChange()">
+<input id="firstText" type="text" size="70" value="attributeName=&quot;value&quot;" onchange="onChange()">
 <br>
 <br>
-<b>Simple XPATH</b>
+<b>Simple xpath</b>
 <br>
 <img src="save.ico" alt="save.ico" width="50" height="50" onclick="save(2)">
-<input id="secondText" type="text" size="100">
+<input id="secondText" type="text" size="70">
 <br>
 <br>
-<b>Contains</b>
+<b>Attribute contains xpath</b>
 <br>
 <img src="save.ico" alt="save.ico" width="50" height="50" onclick="save(3)">
-<input id="thirdText" type="text" size="100">
+<input id="thirdText" type="text" size="70">
 <br>
 <br>
-<b>Empty helper input</b>
+<b>Text contains xpath</b>
 <br>
-<input id="fourText" type="text" size="100">
+<img src="save.ico" alt="save.ico" width="50" height="50" onclick="save(4)">
+<input id="fourText" type="text" size="70">
 <br>
+<br>
+<b>Choose type of element</b>
 <br>
 <button id="*" onclick="add('*')" type="button">*</button>
 <button id="div" onclick="add('div')" type="button">div</button>
 <button id="a" onclick="add('a')" type="button">a</button>
 <button id="span" onclick="add('span')" type="button">span</button>
+<button id="button" onclick="add('button')" type="button">button</button>
+<br>
+<br>
+<button id="h1" onclick="add('h1')" type="button">h1</button>
+<button id="h2" onclick="add('h2')" type="button">h2</button>
+<button id="h3" onclick="add('h3')" type="button">h3</button>
 <button id="ul" onclick="add('ul')" type="button">ul</button>
 <button id="li" onclick="add('li')" type="button">li</button>
-<button id="button" onclick="add('button')" type="button">button</button>
 </body>
 </html>
