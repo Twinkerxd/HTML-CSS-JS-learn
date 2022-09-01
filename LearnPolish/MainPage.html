@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Easy polish</title>
-    <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="myScript.js"></script>
     <style>
     input[type='text'] {font-size: 24px;}
@@ -11,21 +10,30 @@
     button {font-size: 24px;}
     </style>
 </head>
-<body>
+<body onload="changeWord()">
 <h1>Easy polish</h1>
-<img id="img" src="files/1.png" width="300" height="200" onclick="">
+<!-- <img id="img" src="files/1.png" width="300" height="200" onclick=""> -->
+<b>Word</b>
 <br>
-<b>Enter word</b>
+<input id="0" type="text" size="40" onchange="" disabled="disabled">
+<input id="count" type="text" size="3" value="0" disabled="disabled">
 <br>
-<input id="1" type="text" size="40" value="true" onchange="">
 <br>
+<b>Translate</b>
 <br>
-<b>Right answer</b>
+<input id="1" type="text" size="40" onchange="clickOK()">
+<br>
 <br>
 <input id="2" type="text" size="40" value="" onchange="" disabled="disabled">
 <br>
 <br>
+<details>
+    <summary>Right answer</summary>
+    <input id="3" type="text" size="40" value="" onchange="" disabled="disabled">
+</details>
+<br>
+<br>
 <button id="ok" onclick="clickOK()" type="button">OK</button>
-<button id="next" onclick="changeImage()" type="button">Next</button>
+<button id="next" onclick="changeWord()" type="button">Next</button>
 </body>
 </html>
