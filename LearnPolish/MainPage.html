@@ -5,35 +5,40 @@
     <title>Easy polish</title>
     <script type="text/javascript" src="myScript.js"></script>
     <style>
-    input[type='text'] {font-size: 24px;}
-    button {height:100px;width:100px;}
-    button {font-size: 24px;}
-    </style>
+         input[type='text'] {font-size: 24px;}
+         button {height:100px;width:100px;}
+         button {font-size: 24px;}
+      </style>
 </head>
-<body onload="changeWord()">
-<h1>Easy polish</h1>
-<!-- <img id="img" src="files/1.png" width="300" height="200" onclick=""> -->
-<b>Word</b>
-<br>
-<input id="0" type="text" size="40" onchange="" disabled="disabled">
-<input id="count" type="text" size="3" value="0" disabled="disabled">
-<br>
-<br>
-<b>Translate</b>
-<br>
-<input id="1" type="text" size="40" onchange="clickOK()">
-<br>
-<br>
-<input id="2" type="text" size="40" value="" onchange="" disabled="disabled">
-<br>
-<br>
-<details>
-    <summary>Right answer</summary>
-    <input id="3" type="text" size="40" value="" onchange="" disabled="disabled">
-</details>
-<br>
-<br>
-<button id="ok" onclick="clickOK()" type="button">OK</button>
-<button id="next" onclick="changeWord()" type="button">Next</button>
+<body onload="changeWord()" style="background-color:#666699;">
+<center>
+    <h1>Easy polish</h1>
+    <!-- <img id="img" src="files/1.png" width="300" height="200" onclick=""> -->
+    <b>Word</b>
+    <br>
+    <input id="0" type="text" size="31" onchange="" disabled="disabled">
+    <input id="count" type="text" size="3" value="0" disabled="disabled">
+    <br>
+    <br>
+    <b>Translate</b>
+    <br>
+    <input id="1" type="text" size="40" onchange="clickOK()">
+    <br>
+    <br>
+    <b>Result</b>
+    <br>
+    <input id="2" type="text" size="40" value="" onchange="" disabled="disabled">
+    <br>
+    <br>
+    <details>
+        <summary>Right answer</summary>
+        <input id="3" type="text" size="40" value="" onchange="" disabled="disabled">
+    </details>
+    <br>
+    <br>
+    <button id="ok" onclick="clickOK()" type="button" style="height:50px;width:100px">OK</button>
+    <button id="next" onclick="changeWord()" type="button" style="height:50px;width:200px">Next word</button>
+</center>
+
 </body>
 </html>
