@@ -39,7 +39,7 @@ function clickOK() {
             x++;
             changeWord();
         } else {
-            document.getElementById("2").value = "не правильно";
+            document.getElementById("2").value = "неправильно";
             document.getElementById("3").value = plWords[x];
 //            document.getElementById("3").value = plWords[random];
         }
@@ -49,7 +49,7 @@ function clickOK() {
 //        document.getElementById("count").value = count + 1;
 //        changeWord();
 //    } else {
-//        document.getElementById("2").value = "не правильно";
+//        document.getElementById("2").value = "неправильно";
 //        document.getElementById("3").value = plWords[random];
 //    }
 }
